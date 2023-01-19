@@ -25,4 +25,12 @@ public class AlbumMusica extends Produto {
     public void setSelo(String selo) {
         this.selo = selo;
     }
+
+    @Override
+    public String toString() {
+        return "AlbumMusica{" +
+                "musicoBanda='" + musicoBanda + '\'' +
+                ", selo='" + selo + '\'' +
+                "} " + super.toString();
+    }
 }

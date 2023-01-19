@@ -12,6 +12,13 @@ public class Filme extends Produto {
         this.produtor = produtor;
     }
 
+    public Filme(String nome, Integer id, Double preco, String genero, Boolean adulto, String estudio, String diretor, String produtor) {
+        super(nome, id, preco, genero, adulto);
+        this.estudio = estudio;
+        this.diretor = diretor;
+        this.produtor = produtor;
+    }
+
     public String getEstudio() {
         return estudio;
     }
@@ -34,5 +41,14 @@ public class Filme extends Produto {
 
     public void setProdutor(String produtor) {
         this.produtor = produtor;
+    }
+
+    @Override
+    public String toString() {
+        return "Filme{" +
+                "estudio='" + estudio + '\'' +
+                ", diretor='" + diretor + '\'' +
+                ", produtor='" + produtor + '\'' +
+                "} " + super.toString();
     }
 }

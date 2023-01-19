@@ -25,4 +25,12 @@ public class Livro extends Produto {
     public void setEditora(String editora) {
         this.editora = editora;
     }
+
+    @Override
+    public String toString() {
+        return "Livro{" +
+                "escritor='" + escritor + '\'' +
+                ", editora='" + editora + '\'' +
+                "} " + super.toString();
+    }
 }
