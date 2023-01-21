@@ -1,4 +1,4 @@
-package pessoa;
+package br.com.letscode.livraria.pessoa;
 
 import java.util.Date;
 

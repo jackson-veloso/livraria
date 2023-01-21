@@ -14,7 +14,7 @@ public class Produto {
         this.id = id;
         this.preco = preco;
         this.genero = genero;
-        this.produtoAdulto = null;
+        this.produtoAdulto = false;
     }
 
     public Produto(String nome, Integer id, Double preco, String genero, Boolean produtoAdulto) {
@@ -58,6 +58,7 @@ public class Produto {
     }
 
     public Boolean isProdutoAdulto() {
+
         return produtoAdulto;
     }
 
